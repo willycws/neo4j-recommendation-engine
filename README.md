@@ -1,5 +1,16 @@
 # neo4j-recommendation-engine
 POC for Neo4j Recommendation Engine based on https://github.com/graphaware/neo4j-reco
+The aim of this trial is to recommending people a person should be friends with, based on the following requirements:
+- The more friends in common two people have, the more likely it is they should become friends
+- The difference between zero and one friends in common should be significant and each additional friend in common should increase the recommendation relevance by a smaller magnitude.
+- If people live in the same city, the chance of them becoming friends increases
+- If people are of the same gender, the chance of them becoming friends is greater than if they are of opposite genders
+- The bigger the age difference between two people, the lower the chance they will become friends
+- People should not be friends with themselves
+- People who are already friends should not be recommended as potential friends
+- Young users should not be recommended to anyone as potential friends. The definition of "young" should be configurable per computation
+- If we don't have enough recommendations, we will recommend some random people, but only if there is enough time
+- Let's start tackling the requirements one by one.
 
 ######Installation of Neo4J
 1. su
