@@ -72,6 +72,7 @@ CREATE
     (b)-[:LIVES_IN]->(br),
     (l)-[:LIVES_IN]->(mum);
 ```
+3. A msg "Added 19 labels, created 11 nodes, set 19 properties, created 18 relationships, statement executed in 1935 ms." will appear.
 
 
 
