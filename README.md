@@ -36,7 +36,7 @@ The aim of this trial is to recommending people a person should be friends with,
 4. mvn clean install 
 
 ######Load Neo4J with data
-1. Access http://localhost:7474
+1. Access <a href="http://localhost:7474">http://localhost:7474</a>
 2. Cut and paste the following to the Neo4J console -->$
 ```
 CREATE
